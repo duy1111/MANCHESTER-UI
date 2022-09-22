@@ -2,9 +2,12 @@
     z-index: 99;
     height: 46px;
     width: 100%;
-    background: #1a1a1a;
+    background-color: #1a1a1a;
     box-shadow: 0 1px 4px 0 rgb(0 0 0 / 40%);
     position: relative;
+    display: flex;
+    justify-content: space-between;
+
 }
 .header-left {
     display: flex;
@@ -18,6 +21,9 @@
     height: 46px;
     padding: 0;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
     
 }
 .wrapper-content {
@@ -33,11 +39,6 @@
     font-size: 0.875rem;
     position: relative;
     align-items: center;
-    &:hover {
-        &.caret{
-            transform: rotate(-180deg);
-        }
-    }
 }
 .icon-header {
     color: #fff;
@@ -54,10 +55,20 @@
 .caret{
     
     margin-bottom: 3px;
-    
+    position: absolute;
     transform: rotate(-180deg);
+    right: 10px;
     font-size: 1.6rem;
     
+}
+@keyframes spinner {
+    from{
+        transform: rotate(-180deg);
+    }
+    to{
+        transform: rotate(0deg);
+
+    }
 }
 .profile{
     display: flex;
@@ -76,4 +87,16 @@
     font-size: 16px;
     font-size: 1.4rem;
     line-height: 1.8;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-right: 11px;
+}
+.logo-item{
+    width: auto;
+    height: 25px;
+    object-fit: cover;
 }
