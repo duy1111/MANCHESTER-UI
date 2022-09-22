@@ -1,0 +1,13 @@
+.wrapper {
+    width: 100%;
+    float: left;
+    transition: all 0.15s ease;
+}
+
+.wrapper.active {
+    top: -46px;
+    position: fixed;
+    
+    width: 100%;
+    z-index: 9999;
+}
