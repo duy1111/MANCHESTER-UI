@@ -1,7 +1,63 @@
-.wrapper{
+.wrapper {
     height: 75px;
     background: #c70101;
     box-shadow: 0 1px 4px 0 rgb(0 0 0 / 40%);
     z-index: -1;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 7px 21px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 60px;
+    margin-right: 12px;
+    width: 60px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(https://assets.manutd.com/AssetPicker/images/0/0/3/2/197240/Header-Logo1500994616801.png);
+    background-size: contain;
+    cursor: pointer;
+}
+.menu-list {
+    color: #fff;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 6px;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.item-wrapper {
+    display: inline-block;
+    text-align: center;
+    height: 75px;  
+    padding: 0px 6px; 
+    position: relative;
+    width: auto;
+}
+
+.menu-item {
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.item-wrapper {display:inline-block; margin:0;text-transform:uppercase; }
+.item-wrapper:after {
+  display:flex;
+  content: '';
+  border-bottom: solid 5px #fff;  
+  transform: scaleX(0); 
+  transition: transform 350ms ease-in-out;
+}
+.item-wrapper:hover:after { transform: scaleX(1); 
+    transition-delay:300ms;
 }
