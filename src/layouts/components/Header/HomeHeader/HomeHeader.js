@@ -3,7 +3,7 @@ import styles from './HomeHeader.module.scss';
 import Tippy from '@tippyjs/react/headless';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch,faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { Search as PopperWrapper } from '~/components/Search';
 import Button from '~/components/Button';
 const cx = classNames.bind(styles);
@@ -18,6 +18,9 @@ function HomeHeader() {
                             <input  placeholder='WHAT ARE YOU LOOKING FOR?' spellCheck={false} />
                         </div>
                         <Button className={cx('preview-search__btn')} outline>SEARCH</Button>
+                        <button className={cx('clear')}>
+                            <FontAwesomeIcon icon={faCircleXmark} />
+                        </button>
                     </div>
                 </PopperWrapper>
             </div>
@@ -61,11 +64,12 @@ function HomeHeader() {
             </div>
             <div className={cx('header-right')}>
                 <Tippy
-                    visible
+                    
                     interactive
                     delay={[600,800]}
                     placement='bottom'
                     render={renderSearch}
+                    offset={[0, -14]}
                 >
                     <div className={cx('search-wrapper')}>
                         <div className={cx('search-btn')}>
