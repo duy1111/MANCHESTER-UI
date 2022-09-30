@@ -1,7 +1,8 @@
 .wrapper {
     width: 100%;
     float: left;
-    transition: all 0.15s ease;
+    transition: all 0.4s ease;
+    position: fixed;
 }
 
 .wrapper.active {
@@ -10,4 +11,5 @@
     
     width: 100%;
     z-index: 9999;
+
 }

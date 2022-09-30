@@ -1,9 +1,4 @@
-:root{
-    --primary: #fe2c55;
-    --black: #000;
-    --white: #fff;
-    --text-color: #161823;
-}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +6,8 @@
 }
 html {
     font-size: 62.5%;
+
+    background-color: #f8f8f8;
 }
 button,
 input,
@@ -19,6 +16,6 @@ input,
     border: none;
 }
 a {
-    color: var(--white);
+    color: #fff;
     text-decoration: none;
 }

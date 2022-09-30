@@ -1,0 +1,24 @@
+.content-item{
+    display: flex;
+    background-color: #ffffff;
+}
+.image-content{
+    width: 340px;
+    height: 386px;
+    object-fit :cover;
+    
+}
+.wrapper-info{
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px 20px 0 20px;
+    color: #231F20;
+    width: 336px;
+}
+.title{
+    font-size: 2rem;
+}
+.info{
+    font-size: 1.8rem;
+}

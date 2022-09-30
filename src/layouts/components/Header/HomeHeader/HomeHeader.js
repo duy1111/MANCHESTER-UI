@@ -13,10 +13,20 @@ function HomeHeader() {
             <div tabIndex = "-1"{...props} >
                 <PopperWrapper>
                     <div className={cx('preview')}>
-                        <div className={cx('preview-search')}>
-                            <FontAwesomeIcon className={cx('preview-search-icon')} icon={faSearch}></FontAwesomeIcon>
-                            <input  placeholder='WHAT ARE YOU LOOKING FOR?' spellCheck={false} />
-                        </div>
+                        <Tippy
+                            interactive
+                            placement='bottom'
+                            render={() => (
+                                <h1>shfsdhfhds</h1>
+                            )}
+                        >
+                            <div className={cx('preview-search')}>
+                                <FontAwesomeIcon className={cx('preview-search-icon')} icon={faSearch}></FontAwesomeIcon>
+                                <input  placeholder='WHAT ARE YOU LOOKING FOR?' spellCheck={false} />
+                            </div>
+                        </Tippy
+
+                        >
                         <Button className={cx('preview-search__btn')} outline>SEARCH</Button>
                         <button className={cx('clear')}>
                             <FontAwesomeIcon icon={faCircleXmark} />

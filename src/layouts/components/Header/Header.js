@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 function Header() {
     const[fixed,setFixed] = useState(false);
     const hideMenu = () => {
-        if(window.scrollY>=46){
+        if(window.scrollY>=20){
             setFixed(true)
         }else{
             setFixed(false)
