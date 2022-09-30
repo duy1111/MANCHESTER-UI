@@ -1,4 +1,6 @@
-
+:root {
+    --font-family: 'SourceSansProRegular', Helvetica, sans-serif;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +8,7 @@
 }
 html {
     font-size: 62.5%;
-
+    font-family: var(--font-family);
     background-color: #f8f8f8;
 }
 button,
