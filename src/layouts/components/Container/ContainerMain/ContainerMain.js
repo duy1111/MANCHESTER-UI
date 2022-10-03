@@ -1,7 +1,6 @@
 import styles from './ContainerMain.css';
 import classNames from 'classnames/bind';
-import Content from '~/components/Content/contentTwo';
-import ContentFour from '~/components/Content/contentFour';
+import Content from '~/components/Content/content';
 
 const cx = classNames.bind(styles);
 
@@ -11,22 +10,22 @@ function ContainerMain() {
             <div className={cx('grid wide wrapper')}>
                 <div className={cx('row')}>
                     <div className={cx(' col l-6 m-4')}>
-                        <Content />
+                        <Content video />
                     </div>
                     <div className={cx(' col l-6 m-4')}>
                         <Content />
                     </div>
                     <div className={cx(' col l-3 m-4')}>
-                        <ContentFour />
+                        <Content small />
                     </div>
                     <div className={cx(' col l-3 m-4')}>
-                        <ContentFour />
+                        <Content small />
                     </div>
                     <div className={cx(' col l-3 m-4')}>
-                        <ContentFour />
+                        <Content small />
                     </div>
                     <div className={cx(' col l-3 m-4')}>
-                        <ContentFour />
+                        <Content small />
                     </div>
                 </div>
 
@@ -43,16 +42,16 @@ function ContainerMain() {
                         <Content />
                     </div>
                     <div className={cx(' col l-3')}>
-                        <ContentFour />
+                        <Content small />
                     </div>
                     <div className={cx(' col l-3')}>
-                        <ContentFour />
+                        <Content small />
                     </div>
                     <div className={cx(' col l-3')}>
-                        <ContentFour />
+                        <Content small />
                     </div>
                     <div className={cx(' col l-3')}>
-                        <ContentFour />
+                        <Content small />
                     </div>
                 </div>
 

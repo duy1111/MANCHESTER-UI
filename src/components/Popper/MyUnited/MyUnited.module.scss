@@ -1,0 +1,27 @@
+.renderMyUnited {
+    display: flex;
+    width: 100vw;
+    height: 300px;
+}
+.United-item {
+    color: #000;
+    font-size: 1.4rem;
+    padding: 30px 60px 0px 100px;
+}
+.United-item {
+    color: #000;
+    font-size: 1.4rem;
+    text-align: left;
+    &:hover {
+        &::after {
+            width: 50px;
+        }
+    }
+}
+.United-item::after {
+    display: block;
+    content: ' ';
+    width: 0;
+    border-bottom: 1px solid red;
+    transition: 1s;
+}

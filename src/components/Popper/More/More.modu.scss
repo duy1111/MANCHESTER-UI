@@ -1,0 +1,43 @@
+//render more
+.renderMore {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+   
+}
+.more-row {
+    height: 90vh;
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-right: 10px;
+    top:-30px;
+}
+
+.more-column {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 50%;
+}
+.more-item{
+    color: #000;
+    height: 30px;
+    font-size: 1.4rem;
+    text-align:left;
+    &:hover{
+        &::after{
+            width: 100px;
+        }
+    }
+}
+.more-item::after {
+    display: block;
+    content: " ";
+    width: 0;
+    height: 30;
+    border-bottom: 1px solid red;
+    transition: 1s;
+}
