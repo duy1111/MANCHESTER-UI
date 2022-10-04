@@ -158,9 +158,10 @@
         left: 0;
         right: 0;
         bottom: 0;
-        width: 100%;
+        width: 672px;
         height: 386px;
-        object-fit:fill;
+        object-fit:cover;
+        background-color: #231f20;
     }
     .wrapper-info{
         height: auto;
@@ -196,5 +197,7 @@
     }
     .info-bottom{
         color: #ffffff;
+    }.info-bottom__right{
+        margin-right: 24px;
     }
 }

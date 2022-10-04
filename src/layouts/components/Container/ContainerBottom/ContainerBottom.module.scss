@@ -1,0 +1,39 @@
+.wrapper{
+    margin-top: 80px;
+    background-color: #f2f2f2;
+}
+.header{
+    width: 1430px;
+    height: 94px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.header-left{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.matches{
+    padding-right: 22px;
+}
+.all-matches{
+    font-size: 1.4rem;
+    position: relative;
+}
+.position {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+}
+.position::after {
+    display: block;
+    content: ' ';
+    height: 2px;
+    width: 0px;
+    background-color: #c70202;
+    transition: 1s;
+}
+.all-matches:hover .position::after {
+    width: 94px;
+}

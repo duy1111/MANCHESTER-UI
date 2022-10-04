@@ -1,7 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Content.module.scss';
 import Image from '../../Image';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShareSquare,faPlay } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
