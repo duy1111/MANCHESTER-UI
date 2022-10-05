@@ -1,15 +1,16 @@
 .wrapper{
-    position: relative;
-
+    display: flex;
+    flex-direction: column;
     left: 0;
     right: 0;
     transition: left .4s ease-in-out,right .4s ease-in-out;
+    position: relative;
 }
 .container{
-    min-width: 100%;
+    width: 100%;
     background-color: #ffffff;
     width: 100%;
-    float: left;
+    
     padding-top: 300px;
     min-height: 100%;
     

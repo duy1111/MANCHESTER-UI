@@ -87,6 +87,7 @@ function HomeHeader() {
                     render={renderSearch}
                     offset={[0, -14]}
                     hideOnClick
+                    
                 >
                     <div className={cx('search-wrapper')}>
                         <div className={cx('search-btn')}>

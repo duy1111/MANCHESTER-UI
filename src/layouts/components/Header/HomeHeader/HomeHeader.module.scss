@@ -2,11 +2,11 @@
     height: 75px;
     background: #c70101;
     box-shadow: 0 1px 4px 0 rgb(0 0 0 / 40%);
-    z-index: -1;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 7px 21px;
+    z-index: 999;
 }
 .header-left {
     display: flex;
@@ -111,7 +111,7 @@
     display: flex;
     align-items: center;
     padding: 30px 0px 30px 125px;
-    position: relative;
+    overflow: hidden;
 }
 .preview-search-icon {
     width: auto;

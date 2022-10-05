@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import Container from '../components/Container';
+import Footer from '../components/Footer';
 
 function DefaultLayout({ children }) {
     return (
@@ -13,6 +14,7 @@ function DefaultLayout({ children }) {
                     <div className={clsx(styles.content)}>{children}</div>
                 </Container>
             </div>
+            <Footer/>
         </div>
     );
 }

@@ -592,10 +592,9 @@
 
 /* code */
 .grid.wide.wrapper{
-    height: auto;
     background-color: rgba(24,24,24,0.2);
     position: relative;
-    top:46px;
+
     margin-left: 144px;
     background-color: #f8f8f8;
 }

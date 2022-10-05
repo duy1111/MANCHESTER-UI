@@ -8,7 +8,7 @@ function MyUnited({ children }) {
     const renderMyUnited = (props) => {
         return (
             <div tabIndex="-1" {...props}>
-                <PopperWrapper>
+                <PopperWrapper className={cx('wrapper')}>
                     <div className={cx('renderMyUnited')}>
                         <Link className={cx('United-item')}>My Profile</Link>
                         <Link className={cx('United-item')}>Edit Profile</Link>
