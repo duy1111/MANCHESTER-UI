@@ -1,0 +1,84 @@
+.wrapper{
+    position: relative;
+    background-color: #fff;
+    min-width: 280px;
+    height: 380px;
+    border-radius: 8px;
+    margin-right: 22px;
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+.tournaments-logo{
+    width: 160px;
+    
+    display: block;
+    margin: 24px auto;
+}
+.info{
+    padding-top: 12px;
+    margin: 12px;
+    display: flex;
+    font-size: 1.12rem;
+    flex-direction: column;
+    align-items: center;
+    color: #231F20;
+}
+.wrapper-match{
+    height: 50px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time{
+    width: 70px; 
+    height: 50px;
+    background-color: #707070;
+    color: #ffffff;
+    font-size: 2.5rem;
+    line-height: 32px;
+    align-items: center;
+    font-family: BebasNeueBold,Helvetica,sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+.team{
+    height: 50px;
+    width: 50px;
+}
+
+
+.wrapper-teamName{
+    margin: 12px;
+    display: flex;
+    
+}
+.teamName{
+    font-family:  MontserratSemiBold, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 16px;
+    color: #1a1a1a;
+}
+.vs{
+    font-family: SourceSansProBold, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 14px;
+    margin: 0 12px;
+    color: #717171;
+}
+.btn-active{
+    position: absolute;
+    bottom: 30px;
+    border-radius: 50px;
+    height: 50px;
+    width: 170px;
+    right: 55px;
+}
