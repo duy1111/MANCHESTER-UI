@@ -591,10 +591,16 @@
 }
 
 /* code */
-.grid.wide.wrapper{
-    background-color: rgba(24,24,24,0.2);
+.wrapper-main{
+    background-color: #f8f8f8;
     position: relative;
-
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.grid.wide.wrapper{
+    
+    position: relative;
     margin-left: 144px;
     background-color: #f8f8f8;
 }

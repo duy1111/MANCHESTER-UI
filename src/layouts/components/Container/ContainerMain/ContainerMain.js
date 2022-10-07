@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 function ContainerMain() {
     return (
-        <div>
+        <div className={cx('wrapper-main')}>
             <div className={cx('grid wide wrapper')}>
                 <div className={cx('row')}>
                     <div className={cx(' col l-6 m-4')}>
@@ -28,38 +28,33 @@ function ContainerMain() {
                         <Content small />
                     </div>
                 </div>
+            </div>
 
+            <Content video big />
+            <div className={cx('grid wide wrapper')}>
                 <div className={cx('row')}>
-                    <div className={cx(' col l-12 ')}>
+                    <div className={cx(' col l-6 m-4')}>
+                        <Content video />
+                    </div>
+                    <div className={cx(' col l-6 m-4')}>
                         <Content />
                     </div>
-                </div>
-                <div className={cx('row')}>
-                    <div className={cx(' col l-6')}>
-                        <Content />
-                    </div>
-                    <div className={cx(' col l-6')}>
-                        <Content />
-                    </div>
-                    <div className={cx(' col l-3')}>
+                    <div className={cx(' col l-3 m-4')}>
                         <Content small />
                     </div>
-                    <div className={cx(' col l-3')}>
+                    <div className={cx(' col l-3 m-4')}>
                         <Content small />
                     </div>
-                    <div className={cx(' col l-3')}>
+                    <div className={cx(' col l-3 m-4')}>
                         <Content small />
                     </div>
-                    <div className={cx(' col l-3')}>
+                    <div className={cx(' col l-3 m-4')}>
                         <Content small />
                     </div>
                 </div>
-
-                <div className={cx('row')}>
-                    <div className={cx(' col l-12 ')}>
-                        <Content />
-                    </div>
-                </div>
+            </div>
+            <Content video big />
+            <div className={cx('grid wide wrapper')}>
                 <div className={cx('row')}>
                     <div className={cx(' col l-6')}>
                         <Content />

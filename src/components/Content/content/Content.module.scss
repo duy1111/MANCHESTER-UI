@@ -78,17 +78,17 @@
     }
 }
 
-
-/// type
-.small{
+/// size
+.small {
     display: block;
     height: 440px;
     position: relative;
     width: 330px;
-    .image-content{
+    .image-content {
         width: 100%;
         height: 140px;
-        object-fit:fill;
+        object-fit: fill;
+        
     }
     .wrapper-info {
         display: flex;
@@ -103,15 +103,15 @@
         padding-top: 20px;
         font-size: 1.6rem;
     }
-    .position{
+    .position {
         height: 10px;
         width: 100%;
         position: absolute;
-        top:130px;
+        top: 130px;
     }
     .position::after {
         display: block;
-        content: " ";
+        content: ' ';
         height: 2px;
         width: 100px;
         background-color: #c70202;
@@ -124,53 +124,132 @@
         padding-top: 14px;
         font-size: 1.4rem;
     }
-    .info-bottom{
+    .info-bottom {
         display: flex;
         margin-bottom: 12px;
         font-size: 1.4rem;
         justify-content: space-between;
     }
-    .info-bottom__left{
+    .info-bottom__left {
         display: flex;
         align-items: center;
     }
-    .time{
+    .time {
         padding-right: 8px;
     }
-    .split{
+    .split {
         width: 0;
         height: 12px;
         border-right: 1px solid #231f20;
         margin-right: 16px;
         margin-left: 8px;
     }
-    .info-bottom__right{
-        &:hover{
+    .info-bottom__right {
+        &:hover {
             transform: scale(1.2);
         }
     }
 }
-.video{
+.big {
+    display: block;
+    height: auto;
+    position: relative;
+    height: 716px;
+    width: 100vw;
+    
+    .wrapper-image{
+        width: 100vw;
+        height: 716px;
+        .image-content {
+            height: 716px;
+            width: 100vw;
+            object-fit: fill;
+        }
+    }
+    
+    .wrapper-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px 20px 0 20px;
+        color: #231f20;
+        width: 336px;
+        height: 300px;
+    }
+    .title {
+        padding-top: 20px;
+        font-size: 1.6rem;
+    }
+    .position {
+        height: 10px;
+        width: 100%;
+        position: absolute;
+        top: 130px;
+    }
+    .position::after {
+        display: block;
+        content: ' ';
+        height: 2px;
+        width: 100px;
+        background-color: #c70202;
+        transition: 1s;
+    }
+    .content-item:hover .position::after {
+        width: 20px;
+    }
+    .info {
+        padding-top: 14px;
+        font-size: 1.4rem;
+    }
+    .info-bottom {
+        display: flex;
+        margin-bottom: 12px;
+        font-size: 1.4rem;
+        justify-content: space-between;
+    }
+    .info-bottom__left {
+        display: flex;
+        align-items: center;
+    }
+    .time {
+        padding-right: 8px;
+    }
+    .split {
+        width: 0;
+        height: 12px;
+        border-right: 1px solid #231f20;
+        margin-right: 16px;
+        margin-left: 8px;
+    }
+    .info-bottom__right {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+//type
+.video {
     position: relative;
     color: #ffffff;
-    .image-content{
+    .image-content {
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         width: 672px;
         height: 386px;
-        object-fit:cover;
+        object-fit: cover;
         background-color: #231f20;
     }
-    .wrapper-info{
+    .wrapper-info {
         height: auto;
         position: absolute;
         bottom: 10px;
         width: 100%;
         left: 20px;
     }
-    .icon-wrapper{
+    .icon-wrapper {
         height: 50px;
         width: 50px;
         display: flex;
@@ -180,24 +259,25 @@
         border-radius: 8px;
         margin-bottom: 12px;
         transition: all 0.3s ease-in-out;
-        &:hover{
+        &:hover {
             transform: scale(1.1);
         }
     }
-    .icon-play{
-        color: #ffffff;
-        
-        font-size: 2rem;
-    }.title{
+    .icon-play {
         color: #ffffff;
 
+        font-size: 2rem;
     }
-    .info{
+    .title {
         color: #ffffff;
     }
-    .info-bottom{
+    .info {
         color: #ffffff;
-    }.info-bottom__right{
+    }
+    .info-bottom {
+        color: #ffffff;
+    }
+    .info-bottom__right {
         margin-right: 24px;
     }
 }

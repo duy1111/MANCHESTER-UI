@@ -14,12 +14,14 @@ function Content({
     onClick,
     children,
     className,
+    big = false,
     ...passProps
 }) {
     const classes = cx('content-item', {
         [className]: className,
         video,
         small,
+        big,
     });
     const [hideVideo, setHideVideo] = useState(false);
     useEffect (() =>{
