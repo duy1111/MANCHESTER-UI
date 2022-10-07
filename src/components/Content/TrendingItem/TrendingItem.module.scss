@@ -1,0 +1,42 @@
+.wrapper {
+    background-color: #ffffff;
+    width: 280px;
+    height: 380px;
+    border-radius: 8px;
+    margin-right: 22px;
+    position: relative;
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+.image {
+    width: 203px;
+    height: 203px;
+    display: block;
+    margin: 24px auto;
+    object-fit: fill;
+}
+.info {
+    width: 280px;
+    padding: 20px;
+    padding-top: 12px;
+
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    color: #231f20;
+}
+
+.btn-active {
+    position: absolute;
+    bottom: 30px;
+    border-radius: 50px;
+    height: 50px;
+    width: 170px;
+    right: 55px;
+}

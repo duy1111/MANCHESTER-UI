@@ -1,6 +1,7 @@
 import styles from './ContainerMain.css';
 import classNames from 'classnames/bind';
 import Content from '~/components/Content/content';
+import ContainerTrending from './ContainerTrending';
 
 const cx = classNames.bind(styles);
 
@@ -29,7 +30,7 @@ function ContainerMain() {
                     </div>
                 </div>
             </div>
-
+            <ContainerTrending/>
             <Content video big />
             <div className={cx('grid wide wrapper')}>
                 <div className={cx('row')}>
@@ -54,6 +55,7 @@ function ContainerMain() {
                 </div>
             </div>
             <Content video big />
+           
             <div className={cx('grid wide wrapper')}>
                 <div className={cx('row')}>
                     <div className={cx(' col l-6')}>

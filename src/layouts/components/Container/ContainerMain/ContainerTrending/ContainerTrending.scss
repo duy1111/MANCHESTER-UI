@@ -1,13 +1,16 @@
-.wrapper{
+.wrapper-trending{
     position: relative;
-    margin-top: 80px;
-    background-color: #f2f2f2;
+    background-image: url(../../../../../assets/images/OldTrafford.webp);
     overflow: hidden;
     left: 0;
     right: 0;
+    margin-top: 20px;
+    max-height: 552px;
+    
 }
 //header
 .header{
+    
     width: 1430px;
     height: 94px;
     display: flex;
@@ -19,10 +22,14 @@
     align-items: flex-end;
     margin-bottom: 20px;
 }
-.matches{
+.trending-now{
+    cursor: pointer;
     padding-right: 22px;
+    color: #fff;
 }
-.all-matches{
+.theStore{
+    cursor: pointer;
+    color: #fff;
     font-size: 1.4rem;
     position: relative;
 }
@@ -39,7 +46,7 @@
     background-color: #c70202;
     transition: 1s;
 }
-.all-matches:hover .position::after {
+.theStore:hover .position::after {
     width: 94px;
 }
 //header right
@@ -75,21 +82,14 @@
     transform: translate(-65%);
     transition: all 0.5s ease-in-out;
 }
-.wrapper-item3{
-    display: flex;
-    
-    width: 100vw;
-    margin-bottom: 200px;  
-    transform: translate(-100%);
-    transition: all 0.5s ease-in-out;
-}
+
 .btn-prev{
     height: 60px !important;
     max-width: 60px !important;
     position: absolute;
     background: #494A50;
     right: 368px;
-    top: 40%;
+    top: 50%;
 	transform: translate(0, -50%);
     border-top-left-radius: 8px!important;
     border-bottom-left-radius: 8px!important;
@@ -102,9 +102,9 @@
     height: 60px !important;
     width: 60px !important;
     position: absolute;
-    background: #494A50;
+    background: #fff;
     right: 308px;
-    top: 40%;
+    top: 50%;
 	transform: translate(0, -50%);
     border-top-right-radius: 8px!important;
     border-bottom-right-radius: 8px!important;
@@ -121,6 +121,3 @@
     opacity: 0.5;
 }
 
-.btn_click3{
-    background-color: #c70202;
-}

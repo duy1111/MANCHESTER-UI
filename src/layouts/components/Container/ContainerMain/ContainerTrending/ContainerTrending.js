@@ -1,14 +1,14 @@
-import styles from './ContainerBottom.module.scss';
+import styles from './ContainerTrending.scss';
 import classNames from 'classnames/bind';
-import MatchItem from '~/components/Content/MatchItem';
 import { useState } from 'react';
 import Button from '~/components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import TrendingItem from '~/components/Content/TrendingItem';
 
 const cx = classNames.bind(styles);
 
-function ContainerBottom() {
+function ContainerTrending() {
     const [clickPrev, setClickPrev] = useState(1);
 
     const handPrev = () => {
@@ -17,17 +17,17 @@ function ContainerBottom() {
         }
     };
     const handNext = () => {
-        if (clickPrev < 3) {
+        if (clickPrev < 2) {
             setClickPrev(clickPrev + 1);
         }
     };
     return (
-        <div className={cx('wrapper')}>
+        <div className={cx('wrapper-trending')}>
             <div className={cx('header')}>
                 <div className={cx('header-left')}>
-                    <h2 className={cx('matches')}>MATCHES</h2>
-                    <div className={cx('all-matches')}>
-                        <p>ALL MATCHES</p>
+                    <h2 tabIndex="-1" className={cx('trending-now')}>TRENDING NOW</h2>
+                    <div tabIndex="-1" className={cx('theStore')}>
+                        <p>Enter The Store</p>
                         <div className={cx('position')}></div>
                     </div>
                 </div>
@@ -40,54 +40,26 @@ function ContainerBottom() {
                             (!!(clickPrev === 3) && cx('header-right__active', 'active'))
                         }
                     ></span>
-                    <span
-                        className={
-                            (!!(clickPrev === 1) && cx('header-right__active')) ||
-                            (!!(clickPrev === 2) && cx('header-right__active')) ||
-                            (!!(clickPrev === 3) && cx('header-right__active', 'active'))
-                        }
-                    ></span>
                 </div>
             </div>
             {/* match item */}
             <div
-                className={
-                    (!!(clickPrev === 1) && cx('wrapper-item')) ||
-                    (!!(clickPrev === 2) && cx('wrapper-item2')) ||
-                    (!!(clickPrev === 3) && cx('wrapper-item3'))
-                }
+                className={(!!(clickPrev === 1) && cx('wrapper-item')) || (!!(clickPrev === 2) && cx('wrapper-item2'))}
             >
-                <MatchItem
-                    className={(!!(clickPrev === 2) && cx('disable')) || (!!(clickPrev === 3) && cx('disable'))}
-                />
-                <MatchItem
-                    className={(!!(clickPrev === 2) && cx('disable')) || (!!(clickPrev === 3) && cx('disable'))}
-                />
-                <MatchItem
-                    className={(!!(clickPrev === 2) && cx('disable')) || (!!(clickPrev === 3) && cx('disable'))}
-                />
-                <MatchItem
-                    className={(!!(clickPrev === 2) && cx('disable')) || (!!(clickPrev === 3) && cx('disable'))}
-                />
-                <MatchItem />
-                <MatchItem
-                    className={(!!(clickPrev === 1) && cx('disable')) || (!!(clickPrev === 3) && cx('disable'))}
-                />
-                <MatchItem />
-                <MatchItem />
-                <MatchItem
-                    className={(!!(clickPrev === 1) && cx('disable')) || (!!(clickPrev === 2) && cx('disable'))}
-                />
-                <MatchItem
-                    className={(!!(clickPrev === 1) && cx('disable')) || (!!(clickPrev === 2) && cx('disable'))}
-                />
+                <TrendingItem className={!!(clickPrev === 2) && cx('disable')} />
+                <TrendingItem className={!!(clickPrev === 2) && cx('disable')} />
+                <TrendingItem className={!!(clickPrev === 2) && cx('disable')} />
+                <TrendingItem className={!!(clickPrev === 2) && cx('disable')} />
+
+                <TrendingItem className={!!(clickPrev === 1) && cx('disable')} />
+                <TrendingItem className={!!(clickPrev === 1) && cx('disable')} />
+                <TrendingItem className={!!(clickPrev === 1) && cx('disable')} />
+                <TrendingItem className={!!(clickPrev === 1) && cx('disable')} />
             </div>
             <Button
                 small
                 className={
-                    (!!(clickPrev === 1) && cx('btn-prev', 'disable')) ||
-                    (!!(clickPrev === 2) && cx('btn-prev')) ||
-                    (!!(clickPrev === 3) && cx('btn-prev'))
+                    (!!(clickPrev === 1) && cx('btn-prev', 'disable')) || (!!(clickPrev === 2) && cx('btn-prev'))
                 }
                 onClick={handPrev}
             >
@@ -96,9 +68,7 @@ function ContainerBottom() {
             <Button
                 small
                 className={
-                    (!!(clickPrev === 1) && cx('btn-next')) ||
-                    (!!(clickPrev === 2) && cx('btn-next', 'btn_click3')) ||
-                    (!!(clickPrev === 3) && cx('btn-next', 'disable'))
+                    (!!(clickPrev === 1) && cx('btn-next')) || (!!(clickPrev === 2) && cx('btn-next', 'disable'))
                 }
                 onClick={handNext}
             >
@@ -108,4 +78,4 @@ function ContainerBottom() {
     );
 }
 
-export default ContainerBottom;
+export default ContainerTrending;
