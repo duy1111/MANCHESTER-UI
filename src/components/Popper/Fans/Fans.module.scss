@@ -1,0 +1,51 @@
+.wrapper {
+    width: 100vw;
+    padding-left: 120px;
+    height: 650px;
+}
+.OldTrafford {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+.OldTrafford2 {
+    width: 250px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.OldTraffordItem {
+    font-size: 1.5rem;
+    color: #000;
+    margin-right: 30px;
+    margin-bottom: 12px;
+    &:hover {
+        &::after {
+            width: 100px;
+        }
+    }
+}
+.OldTraffordItem::after {
+    display: block;
+    content: ' ';
+    width: 0;
+    height: 30;
+    padding-bottom: 8px;
+    border-bottom: 2px solid red;
+    transition: 1s;
+}
+.wrapper-footer__latest {
+    font-size: 2rem;
+    color: #000;
+    font-family: BebasNeueBold, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 17px;
+    color: #1a1a1a;
+}
+.wrapper-footer__item {
+    display: flex;
+}
+.footer__item {
+    margin-right: 20px;
+}

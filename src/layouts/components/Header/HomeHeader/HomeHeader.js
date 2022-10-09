@@ -8,6 +8,9 @@ import { Search as PopperWrapper } from '~/components/Search';
 import Button from '~/components/Button';
 import More from '~/components/Popper/More';
 import MyUnited from '~/components/Popper/MyUnited';
+import OldTrafford from '~/components/Popper/OldTrafford';
+import Player from '~/components/Popper/Player';
+import Fans from '~/components/Popper/Fans';
 const cx = classNames.bind(styles);
 function HomeHeader() {
     const renderSearch = (props) => {
@@ -61,17 +64,21 @@ function HomeHeader() {
                             <div className={cx('menu-item')}>MY UNITED</div>
                         </Link>
                     </MyUnited>
-                    <Link className={cx('item-wrapper')}>
-                        <div className={cx('menu-item')}>FANS</div>
-                    </Link>
-                    <Link className={cx('item-wrapper')}>
-                        <div className={cx('menu-item')}>PLAYERS</div>
-                    </Link>
-                    <>
+                    <Fans>
+                        <Link className={cx('item-wrapper')}>
+                            <div className={cx('menu-item')}>FANS</div>
+                        </Link>
+                    </Fans>
+                    <Player>
+                        <Link className={cx('item-wrapper')}>
+                            <div className={cx('menu-item')}>PLAYERS</div>
+                        </Link>
+                    </Player>
+                    <OldTrafford>
                         <Link className={cx('item-wrapper')}>
                             <div className={cx('menu-item')}>OLD TRAFFORD</div>
                         </Link>
-                    </>
+                    </OldTrafford>
 
                     <More>
                         <Link className={cx('item-wrapper')}>
