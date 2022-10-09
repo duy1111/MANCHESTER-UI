@@ -11,6 +11,10 @@ import MyUnited from '~/components/Popper/MyUnited';
 import OldTrafford from '~/components/Popper/OldTrafford';
 import Player from '~/components/Popper/Player';
 import Fans from '~/components/Popper/Fans';
+import Tickets from '~/components/Popper/Tickets';
+import MuTV from '~/components/Popper/MuTV';
+import Latest from '~/components/Popper/Latest';
+import Fixtures from '~/components/Popper/Fixtures';
 const cx = classNames.bind(styles);
 function HomeHeader() {
     const renderSearch = (props) => {
@@ -47,18 +51,26 @@ function HomeHeader() {
                     <div className={cx('logo')}></div>
                 </Link>
                 <div className={cx('menu-list')}>
-                    <Link className={cx('item-wrapper')}>
-                        <div className={cx('menu-item')}>LATEST</div>
-                    </Link>
-                    <Link className={cx('item-wrapper')}>
-                        <div className={cx('menu-item')}>MUTV</div>
-                    </Link>
-                    <Link className={cx('item-wrapper')}>
-                        <div className={cx('menu-item')}>FIXTURES</div>
-                    </Link>
-                    <Link className={cx('item-wrapper')}>
-                        <div className={cx('menu-item')}>TICKETS</div>
-                    </Link>
+                    <Latest>
+                        <Link className={cx('item-wrapper')}>
+                            <div className={cx('menu-item')}>LATEST</div>
+                        </Link>
+                    </Latest>
+                    <MuTV>
+                        <Link className={cx('item-wrapper')}>
+                            <div className={cx('menu-item')}>MUTV</div>
+                        </Link>
+                    </MuTV>
+                    <Fixtures>
+                        <Link className={cx('item-wrapper')}>
+                            <div className={cx('menu-item')}>FIXTURES</div>
+                        </Link>
+                    </Fixtures>
+                    <Tickets>
+                        <Link className={cx('item-wrapper')}>
+                            <div className={cx('menu-item')}>TICKETS</div>
+                        </Link>
+                    </Tickets>
                     <MyUnited>
                         <Link className={cx('item-wrapper')}>
                             <div className={cx('menu-item')}>MY UNITED</div>
