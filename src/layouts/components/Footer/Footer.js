@@ -138,21 +138,31 @@ function Footer() {
                 </div>
             </div>
             <div className={cx('wrapper-main')}>
-                <div className={cx('icon-btn')}>
-                    <FontAwesomeIcon className={cx('icon-item')} icon={faYoutube}></FontAwesomeIcon>
-                </div>
-                <div className={cx('icon-btn')}>
-                    <FontAwesomeIcon className={cx('icon-item')} icon={faFacebook}></FontAwesomeIcon>
-                </div>
-                <div className={cx('icon-btn')}>
-                    <FontAwesomeIcon className={cx('icon-item')} icon={faTwitter}></FontAwesomeIcon>
-                </div>
-                <div className={cx('icon-btn')}>
-                    <FontAwesomeIcon className={cx('icon-item')} icon={faInstagram}></FontAwesomeIcon>
-                </div>
-                <div className={cx('icon-btn')}>
-                    <FontAwesomeIcon className={cx('icon-item')} icon={faTiktok}></FontAwesomeIcon>
-                </div>
+                <a href='https://www.youtube.com/manutd' target='blank'>
+                    <div className={cx('icon-btn')}>
+                        <FontAwesomeIcon className={cx('icon-item')} icon={faYoutube}></FontAwesomeIcon>
+                    </div>
+                </a>
+                <a href='https://www.facebook.com/manchesterunited' target='blank'>
+                    <div className={cx('icon-btn')}>
+                        <FontAwesomeIcon className={cx('icon-item')} icon={faFacebook}></FontAwesomeIcon>
+                    </div>
+                </a>
+                <a href='https://twitter.com/ManUtd' target='blank'>
+                    <div className={cx('icon-btn')}>
+                        <FontAwesomeIcon className={cx('icon-item')} icon={faTwitter}></FontAwesomeIcon>
+                    </div>
+                </a>
+                <a href='https://www.instagram.com/manchesterunited/' target='blank'>
+                    <div className={cx('icon-btn')}>
+                        <FontAwesomeIcon className={cx('icon-item')} icon={faInstagram}></FontAwesomeIcon>
+                    </div>
+                </a>
+                <a href='https://www.tiktok.com/@manutd' target="blank">
+                    <div className={cx('icon-btn')}>
+                        <FontAwesomeIcon className={cx('icon-item')} icon={faTiktok}></FontAwesomeIcon>
+                    </div>
+                </a>
             </div>
             <div className={cx('footer-bottom')}>
                 <div className={cx('footer-bottom__left')}>

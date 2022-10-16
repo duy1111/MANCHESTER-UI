@@ -31,6 +31,7 @@
     background-color: #3f3f3f;
     position: relative;
     margin: 4px;
+    cursor: pointer;
     &:hover {
         background-color: #c70101;
     }
@@ -39,6 +40,7 @@
     margin: auto;
     color: #ffffff;
     position: absolute;
+    
     top: 50%;
     left: 50%;
     margin: 0;

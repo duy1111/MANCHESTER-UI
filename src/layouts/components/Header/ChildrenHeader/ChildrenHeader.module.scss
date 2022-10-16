@@ -1,0 +1,29 @@
+.wrapper {
+    height: 51px;
+    background: #c70101;
+    z-index: 90;
+    width: 100%;
+    background-color: #fff;
+    color: #231F20;
+    display: block;
+}
+.wrapper-item{
+    width: 1390px;
+    display: flex;
+    height: 51px;
+    margin: auto;
+    
+}
+.item{
+    margin-top: 10px;
+    margin-right: 24px;
+    font-family: MontserratRegular, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+    border-bottom: 4px solid transparent;
+    color: #6e6e6e;
+    &:hover{
+        border-bottom: 4px #6e6e6e solid;
+    }
+}

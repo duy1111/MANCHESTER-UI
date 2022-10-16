@@ -1,0 +1,123 @@
+.wrapper-trending{
+    position: relative;
+    background-image: url(../../../../../assets/images/OldTrafford.webp);
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    max-height: 552px;
+    
+}
+//header
+.header{
+    
+    width: 1430px;
+    height: 94px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.header-left{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.trending-now{
+    cursor: pointer;
+    padding-right: 22px;
+    color: #fff;
+}
+.theStore{
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.4rem;
+    position: relative;
+}
+.position {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+}
+.position::after {
+    display: block;
+    content: ' ';
+    height: 2px;
+    width: 0px;
+    background-color: #c70202;
+    transition: 1s;
+}
+.theStore:hover .position::after {
+    width: 94px;
+}
+//header right
+.header-right{
+    display: flex;  
+    align-items: flex-end;
+    margin-bottom: 20px;
+    margin-right: 240px;
+}
+.header-right__active{
+    height: 3px;
+    width: 20px;
+    margin: 2px;
+    background-color: #c2c2c3;
+}
+.active{
+    background-color: #c70202;
+}
+
+//bottom
+.wrapper-item{  
+    display: flex;
+    width: 100vw;
+    margin-bottom: 200px;  
+    transform: translate(126px);
+    transition: all 0.5s ease-in-out;
+}
+.wrapper-item2{
+    display: flex;
+    
+    width: 100vw;
+    margin-bottom: 200px;  
+    transform: translate(-65%);
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-prev{
+    height: 60px !important;
+    max-width: 60px !important;
+    position: absolute;
+    background: #494A50;
+    right: 368px;
+    top: 50%;
+	transform: translate(0, -50%);
+    border-top-left-radius: 8px!important;
+    border-bottom-left-radius: 8px!important;
+    transition: all 1 ease-in-out;
+    &:hover{
+        background-color: #c70202;
+    }
+}
+.btn-next{
+    height: 60px !important;
+    width: 60px !important;
+    position: absolute;
+    background: #fff;
+    right: 308px;
+    top: 50%;
+	transform: translate(0, -50%);
+    border-top-right-radius: 8px!important;
+    border-bottom-right-radius: 8px!important;
+    transition: all 1 ease-in-out;
+    &:hover{
+        background-color: #c70202;
+    }
+}
+
+// match item
+
+.disable{
+    pointer-events: none;
+    opacity: 0.5;
+}
+

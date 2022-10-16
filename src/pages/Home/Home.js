@@ -1,6 +1,10 @@
-function Home() {
+import Container from "~/layouts/components/Container";
+
+function Home({ children }) {
     return ( 
-        <h2>home page</h2>
+        <Container >
+                    <div >{children}</div>
+        </Container>
     )
 }
 

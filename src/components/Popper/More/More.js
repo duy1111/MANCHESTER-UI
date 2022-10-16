@@ -84,7 +84,7 @@ function More({ children }) {
         );
     };
     return (
-        <Tippy interactive placement="bottom" render={renderMore} offset={[0, -8]}>
+        <Tippy delay={[600, 800]} interactive placement="bottom" render={renderMore} offset={[0, -8]}>
             {children}
         </Tippy>
     );

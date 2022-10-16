@@ -40,6 +40,7 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
     return (
         <div>
             <Tippy
+                delay={[600, 800]}
                 offset={[0,0]}
                 interactive
                 hideOnClick={hideOnClick}

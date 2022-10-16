@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { Search as PopperWrapper } from '~/components/Search';
+
+
+import config from '~/config';
+
 import Button from '~/components/Button';
 import More from '~/components/Popper/More';
 import MyUnited from '~/components/Popper/MyUnited';
@@ -52,7 +56,7 @@ function HomeHeader() {
                 </Link>
                 <div className={cx('menu-list')}>
                     <Latest>
-                        <Link className={cx('item-wrapper')}>
+                        <Link to={config.routes.latest} className={cx('item-wrapper')}>
                             <div className={cx('menu-item')}>LATEST</div>
                         </Link>
                     </Latest>
